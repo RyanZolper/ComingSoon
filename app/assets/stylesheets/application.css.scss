@@ -1,0 +1,128 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "bootstrap-slider";
+
+
+ .navbar-brand {
+   // Vertically center the text given $navbarHeight
+   padding: 0px 10px 0px;
+   font-size: 20px;
+   line-height: 1;
+ }
+
+ .navbar-default {
+     background-color: #428BCA;
+     border-color: #E7E7E7;
+     text-align: center;
+ }
+
+ .n1 {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-size: 24px;
+   color: white;
+ }
+
+ .n2 {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-size: 18px;
+ }
+
+ .nd1 {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-size: 18px;
+   padding-left: 9px;
+   padding-right: 9px;
+ }
+
+ .nl {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-size: 18px;
+   color: #428BCA;
+   font-weight: bold;
+ }
+
+
+ .w1 {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-size: 48px;
+ }
+
+ .w2 {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-size: 36px;
+ }
+
+ .w3 {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-size: 24px;
+ }
+
+ .w4 {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-size: 18px;
+ }
+
+ .navbar-text {
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   font-size: 24px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+   color: white;
+ }
+
+ .welcome-div {
+   position:absolute;
+   top:20%;
+   right:0;
+   left:0;
+ }
+
+ .form-control {
+   border: 1px solid;
+ }
+
+
+ .slider-track {
+   border-radius:5px;
+   border: 1px solid;
+ }
+
+ #country-input {
+   width: 20%;
+   margin: auto;
+ }
+
+ .center {
+  text-align: center;
+}
+
+.res1 {
+  border: 2px solid;
+  width: 55%;
+  margin: auto;
+}
+
+.res2 {
+  border: 2px solid;
+  width: 55%;
+  margin: auto;
+}
+
+.res1 + .res2 {
+  border-top:0;
+}

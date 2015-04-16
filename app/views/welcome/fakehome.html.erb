@@ -1,0 +1,94 @@
+<div class="container-fluid" data-toggle="modal" data-target="#soon">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/families/home">
+        <%= image_tag "AAElogo.png", height: 55 %>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <% if current_page?(root_url) == false %>
+        <div class="navbar-form">
+          <%= form_tag(families_home_path, method: "get", class: "navbar-form navbar-left") do %>
+
+            <%= label_tag(:q, "Where do you want to go?", style: 'color:white') %>
+            <span class="n1"><%= text_field_tag(:q, nil, id: "country-input") %></span>
+            &nbsp;&nbsp;
+
+            <span class="n1"><%= label_tag(:s, "How old are you?", style: 'color:white') %></span>
+            <%= text_field_tag(:s) %>
+
+            <%= submit_tag("Search", class: "btn btn-default") %>
+          <% end %>
+        </div>
+      <% else %>
+        <p class="navbar-text" style="color:white">Welcome to Arrange an Exchange!</p>
+      <% end %>
+      <ul class="nav navbar-nav navbar-right">
+        <li><button type="button" class="btn btn-default navbar-btn" id="login" data-toggle="modal" data-target="#loginModal">
+          <span class="nl">Log In</span>
+        </button>&nbsp;&nbsp;</li>
+        <li><button type="button" class="btn btn-default navbar-btn" id="signup" data-toggle="modal" data-target="#signupModal">
+          <span class="nl">Sign Up!</spac>
+        </button></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container-fluid">
+  <div class="welcome-div" style="text-align:center; vertical-align:middle">
+
+    <%= form_tag do %>
+
+      <span class="w1"><%= label_tag(:q, "Where do you want to go?") %></span><br>
+      <%= text_field_tag(:q, nil, {id: "country-input", class: "form-control", size: "30"}) %><br><br>
+      <span class="w2"><%= label_tag(:s, "How old are you?") %></span><span class="w2"><br><span id="ageSliderVal">18</span> years old<br></span>
+      <span class="w4">13</span> <%= text_field_tag(:s, 18, {id: 'age', type: 'text',
+                       data: {'slider-id' => 'ageSlider',
+                              'slider-min' => '13',
+                              'slider-max' => '28',
+                              'slider-tooltip' => 'hide',
+                              'slider-step' => '1',
+                              'slider-value' => '18' }}) %> <span class="w4">28</span><br><br>
+      <%= submit_tag("Search", class: "btn btn-primary btn-lg") %>
+    <% end %>
+
+  </div>
+</div>
+
+</div>
+
+<div class="modal fade" id="soon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-title w2 center" id="myModalLabel">Coming Soon!</div>
+      </div>
+      <div class="modal-body center">
+        <div class="row">
+        <span class="w3">Arrange An Exchange is in the final stage of development!</span><br>
+        <div class="col-md-6 w3">
+          Follow the link below to 
+
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
