@@ -112,17 +112,48 @@
 }
 
 .res1 {
-  border: 2px solid;
-  width: 55%;
+  border-top: 4px solid;
+  border-bottom: 2px solid;
+  border-left: 4px solid;
+  border-right: 4px solid;
   margin: auto;
 }
 
 .res2 {
-  border: 2px solid;
-  width: 55%;
+  border-bottom: 4px solid;
+  border-left: 4px solid;
+  border-right: 4px solid;
   margin: auto;
 }
 
-.res1 + .res2 {
-  border-top:0;
+.res2 + .res1 {
+  border-top: 2px solid;
+}
+
+.contact {
+  width: 40%;
+  margin: auto;
+  background-color: #428BCA;
+  border-radius: 10px;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.strokeme {
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+
+.navbut {
+  padding-right: 5px;
+}
+
+.pimg {
+  height: 250px;
 }

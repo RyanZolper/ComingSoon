@@ -11,13 +11,20 @@
     <%= stylesheet_link_tag 'background' %>
   <% end %>
 
+
+
+
   <%= favicon_link_tag 'favicon.png' %>
   <% if action_name == 'portfolio' %>
     <%= stylesheet_link_tag    'jquery.fullPage' %>
     <%= javascript_include_tag 'jquery.fullPage' %>
   <% end %>
 
-
+  <% if action_name == 'portfolio' %>
+    <style>
+    body { padding-top:64px; }
+    </style>
+  <% end %>
 </head>
 <body>
 

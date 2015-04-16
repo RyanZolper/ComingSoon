@@ -1,11 +1,22 @@
 <div id="fullpage">
   <div class="section">
     <div class="center">
+      <div class="row">
+        <div class="col-md-4">
+          <%= image_tag 'me', class: "img-rounded pimg" %>
+        </div>
+        <div class="col-md-4" style="margin-top:100px;">
+          <span class="w1">About Me</span><br><br>
+          <span class="w2">My name is Ryan Zolper.</span>
+        </div>
+        <div class="col-md-4">
+          <%= image_tag 'Iron-Yard.png', class: "img-rounded pimg" %>
+        </div>
 
-      <span class="w1">About Me</span>
+
+      </div>
       <br><br>
       <div class="w3">
-        Hi! My name is Ryan Zolper.<br><br><br>
         I am a full-stack Ruby on Rails developer.
         I live in St. Pete, Fl.<br>
         I left Bucknell University in December 2014 because I really didn't know what I wanted to do with my life. <br>
@@ -38,23 +49,24 @@
       </div>
     </div>
   <div class="section">
-    <div class="center">
-      <span class="w2">John Ryan Zolper</span><br><br>
-      <span class="w3">Skills</span><br>
+    <div class="center"><br><br>
+      <span class="w2">Skills</span><br>
       <div class="w4">
         Ruby on Rails, JS, JQUERY, HTML, CSS, SASS, coffeescript<br>
         Experience with:<br>
         PostGres, AWS, Heroku, Git, Github, AWS
       </div>
-    </div><br>
-    <div class="w3 center">Experience</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+    <div class="w2 center">Experience</div>
     <div class="row w4 res1">
       <div class="col-md-6">
         Raymond James Financial Inc.<br>
         St Petersburg, FL 33704
       </div>
       <div class="col-md-6" style="text-align:right;">
-        Senior Intern -- Compliance Department<br>
+        Senior Intern<br>Compliance Department<br>
         5/2014-8/2014
       </div>
     </div>
@@ -84,7 +96,7 @@
         St Petersburg, FL 33704
       </div>
       <div class="col-md-6" style="text-align:right;">
-        Junior Intern -- Compliance Department<br>
+        Junior Intern<br>Compliance Department<br>
         7/2013-12/2013
       </div>
     </div>
@@ -93,16 +105,113 @@
       Streamlined data input process;<br>
       improved productivity by 500% by automating data input process with Excel Macros
     </div>
-
-
+  </div>
+  <div class="col-md-6">
+    <div class="w2 center">Education</div>
+    <div class="row w4 res1">
+      <div class="col-md-6">
+        The Iron Yard<br>
+        St Petersburg, FL 33704
+      </div>
+      <div class="col-md-6" style="text-align:right;">
+        April 2015<br>
+        Ruby on Rails
+      </div>
+    </div>
+    <div class="w4 center res2 row">
+      Developed the skills of a junior RoR programmer<br>
+      Further developed critical thinking, time management, and enthusiasm for programming
+    </div>
+    <div class="row w4 res1">
+      <div class="col-md-6">
+        Bucknell University<br>
+        Lewisburg, PA 17837
+      </div>
+      <div class="col-md-6" style="text-align:right;">
+        August 2012 - December 2014<br>
+        BSBA track
+      </div>
+    </div>
+    <div class="w4 center res2 row">
+      Global Management Major with Spanish Minor<br>
+      Disenrolled to explore other academic or employment options
+    </div>
+    <div class="row w4 res1">
+      <div class="col-md-6">
+        Glen Rock High School<br>
+        Glen Rock, NJ 07452
+      </div>
+      <div class="col-md-6" style="text-align:right;">
+        June 2012<br>
+        BSBA track
+      </div>
+    </div>
+    <div class="w4 center res2 row">
+      2012 National Merit Scholar<br>
+      AP Scholar with distinction<br>
+      Varsity soccer (captain), chemistry and physics teams
+    </div>
+    <div class="w3 center" style="padding-top: 5px;">Activities</div>
+    <div class="w4 center res1 row">
+      Habitaty for Humanity volunteer, 150+ hours, 7/2012 - present
+    </div>
+    <div class="w4 center res2 row">
+      Army ROTC cadet, full scholarship winner, 8/2012 - 10/2013
+    </div>
 
     </div>
   </div>
 
+  </div>
 
+  <div class="section">
+    <div class="center contact"><br>
+      <span class="w1 white strokeme">Contact Me</span><br><br>
+      <div class="w2 white strokeme">
+        <a class="w2 white strokeme" href="https://www.linkedin.com/in/ryanzolper">LinkedIn</a><br>
+        <a class="w2 white strokeme" href="https://github.com/RyanZolper">GitHub</a><br>
+        zolper11@gmail.com<br>
+    </div><br>
+  </div>
 
 
 
   </div>
 
 </div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/families/home">
+        <%= image_tag "AAElogo.png", height: 55 %>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <p class="navbar-text strokeme" style="color:white">John Ryan Zolper</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="navbut"><button type="button" class="btn btn-default navbar-btn" onclick="$.fn.fullpage.moveTo(1);">
+          <span class="nl">About Me</span>
+        </button></li>
+        <li class="navbut"><button type="button" class="btn btn-default navbar-btn" onclick="$.fn.fullpage.moveTo(2);">
+          <span class="nl">Projects</span>
+        </button></li>
+        <li class="navbut"><button type="button" class="btn btn-default navbar-btn" onclick="$.fn.fullpage.moveTo(3);">
+          <span class="nl">Resume</span>
+        </button></li>
+        <li class="navbut"><button type="button" class="btn btn-default navbar-btn" onclick="$.fn.fullpage.moveTo(4);">
+          <span class="nl">Contact</span>
+        </button></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
