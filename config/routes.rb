@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root 'welcome#fakehome'
   get 'RyanZolper' => 'welcome#portfolio'
   post 'welcome/free'
+  get 'ryanzolper' => 'welcome#portfolio'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
