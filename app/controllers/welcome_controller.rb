@@ -9,7 +9,7 @@ class WelcomeController < ApplicationController
     if @user.save(user_params)
       UserMailer.free(@user).deliver_later
       redirect_to root_path, notice: "Message sent! We'll update you as soon as possible!"
-    else redirect_to root_path, alert: "Try Again!"
+    else redirect_to root_path, alert: "You forgot to enter an email. Please try again."
     end
   end
 
